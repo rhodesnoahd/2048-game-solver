@@ -1,0 +1,59 @@
+# Prerequisites
+*.d
+
+# Compiled Object files
+*.slo
+*.lo
+*.o
+*.obj
+
+# Precompiled Headers
+*.gch
+*.pch
+
+# Compiled Dynamic libraries
+*.so
+*.dylib
+*.dll
+
+# Fortran module files
+*.mod
+*.smod
+
+# Compiled Static libraries
+*.lai
+*.la
+*.a
+*.lib
+
+# Executables
+*.exe
+*.out
+*.app
+
+# select generated files
+*.stdcout
+*.stderr
+*.diff
+output31.txt
+output32.txt
+output33.txt
+output34.txt
+output35.txt
+output36.txt
+output37.txt
+output38.txt
+output39.txt
+output310.txt
+output311.txt
+output312.txt
+output313.txt
+output314.txt
+output315.txt
+output316.txt
+output317.txt
+output318.txt
+output319.txt
+test
+TIMEOUT
+GRADE
