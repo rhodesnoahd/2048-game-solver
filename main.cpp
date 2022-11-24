@@ -7,13 +7,12 @@
 
 #include <chrono>
 
-using namespace std;
+// using namespace std; // bad practice
 
 typedef vector<int> Row;
 typedef vector<Row> Matrix;
 
-struct node
-{
+struct node {
     string shift; // 1, 2, 3, or 4
     Matrix m;
     bool solved;
@@ -35,7 +34,7 @@ struct node
 //     }
 // }
    
-// Shift() Helpers
+// helpers
 void mergeStack(int i_, int j_, int size_, bool& addedToStack_, const Matrix& matrix_, stack<int>& s_, node& n_)
 {
     if(matrix_.at(i_).at(j_) != 0) // only push nonzero values from matrix_, by default
@@ -133,7 +132,7 @@ Matrix rotate90Counterclockwise(Matrix& matrix_, int size_)
     return rMatrix;
 }
 
-// Shifts()
+// shifts
 node shiftUp(const Matrix& matrix_, int size_)
 {
     // create node
@@ -352,6 +351,11 @@ string findShortestPath(const Matrix& matrix_, int size_)
     }
     return path;
 };
+
+// bottom-up dynamic programming
+string solve2048(int level, Matrix& board, string path, ofstream& _ofs) {
+    // node 
+}
 
 
 auto start = chrono::steady_clock::now();
